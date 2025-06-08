@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Hamming fonksiyonları
+
 def calculate_parity_bits(data_bits):
     m = len(data_bits)
     r = 0
@@ -128,7 +128,7 @@ class HammingGUI:
             self.output_text.insert(tk.END, f"Düzeltilmiş Veri:\n{''.join(map(str, corrected))}\n")
             self.hamming_code = corrected
 
-# Programı çalıştır
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = HammingGUI(root)
